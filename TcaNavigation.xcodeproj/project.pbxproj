@@ -11,6 +11,9 @@
 		90FA8DE42BB9609B00B5659A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DE32BB9609B00B5659A /* ContentView.swift */; };
 		90FA8DE62BB9609C00B5659A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FA8DE52BB9609C00B5659A /* Assets.xcassets */; };
 		90FA8DEA2BB9609C00B5659A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FA8DE92BB9609C00B5659A /* Preview Assets.xcassets */; };
+		90FA8DF22BB9742200B5659A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 90FA8DF12BB9742200B5659A /* ComposableArchitecture */; };
+		90FA8DF52BB9749800B5659A /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DF42BB9749800B5659A /* ContactsFeature.swift */; };
+		90FA8DF72BB9751800B5659A /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DF62BB9751800B5659A /* ContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		90FA8DE52BB9609C00B5659A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90FA8DE72BB9609C00B5659A /* TcaNavigation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TcaNavigation.entitlements; sourceTree = "<group>"; };
 		90FA8DE92BB9609C00B5659A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90FA8DF42BB9749800B5659A /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
+		90FA8DF62BB9751800B5659A /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FA8DF22BB9742200B5659A /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +58,7 @@
 		90FA8DE02BB9609B00B5659A /* TcaNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				90FA8DF32BB9748000B5659A /* ContactsFeature */,
 				90FA8DE12BB9609B00B5659A /* TcaNavigationApp.swift */,
 				90FA8DE32BB9609B00B5659A /* ContentView.swift */,
 				90FA8DE52BB9609C00B5659A /* Assets.xcassets */,
@@ -67,6 +74,15 @@
 				90FA8DE92BB9609C00B5659A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90FA8DF32BB9748000B5659A /* ContactsFeature */ = {
+			isa = PBXGroup;
+			children = (
+				90FA8DF42BB9749800B5659A /* ContactsFeature.swift */,
+				90FA8DF62BB9751800B5659A /* ContactsView.swift */,
+			);
+			path = ContactsFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +101,9 @@
 			dependencies = (
 			);
 			name = TcaNavigation;
+			packageProductDependencies = (
+				90FA8DF12BB9742200B5659A /* ComposableArchitecture */,
+			);
 			productName = TcaNavigation;
 			productReference = 90FA8DDE2BB9609B00B5659A /* TcaNavigation.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 90FA8DD52BB9609B00B5659A;
+			packageReferences = (
+				90FA8DF02BB9742200B5659A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 90FA8DDF2BB9609B00B5659A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +163,8 @@
 			files = (
 				90FA8DE42BB9609B00B5659A /* ContentView.swift in Sources */,
 				90FA8DE22BB9609B00B5659A /* TcaNavigationApp.swift in Sources */,
+				90FA8DF52BB9749800B5659A /* ContactsFeature.swift in Sources */,
+				90FA8DF72BB9751800B5659A /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90FA8DF02BB9742200B5659A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90FA8DF12BB9742200B5659A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90FA8DF02BB9742200B5659A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90FA8DD62BB9609B00B5659A /* Project object */;
 }
