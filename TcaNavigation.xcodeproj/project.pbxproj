@@ -14,6 +14,8 @@
 		90FA8DF22BB9742200B5659A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 90FA8DF12BB9742200B5659A /* ComposableArchitecture */; };
 		90FA8DF52BB9749800B5659A /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DF42BB9749800B5659A /* ContactsFeature.swift */; };
 		90FA8DF72BB9751800B5659A /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DF62BB9751800B5659A /* ContactsView.swift */; };
+		90FA8DF92BB977F400B5659A /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DF82BB977F400B5659A /* AddContactFeature.swift */; };
+		90FA8DFB2BB9784100B5659A /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DFA2BB9784100B5659A /* AddContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		90FA8DE92BB9609C00B5659A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90FA8DF42BB9749800B5659A /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
 		90FA8DF62BB9751800B5659A /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		90FA8DF82BB977F400B5659A /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
+		90FA8DFA2BB9784100B5659A /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			children = (
 				90FA8DF42BB9749800B5659A /* ContactsFeature.swift */,
 				90FA8DF62BB9751800B5659A /* ContactsView.swift */,
+				90FA8DF82BB977F400B5659A /* AddContactFeature.swift */,
+				90FA8DFA2BB9784100B5659A /* AddContactView.swift */,
 			);
 			path = ContactsFeature;
 			sourceTree = "<group>";
@@ -162,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90FA8DE42BB9609B00B5659A /* ContentView.swift in Sources */,
+				90FA8DF92BB977F400B5659A /* AddContactFeature.swift in Sources */,
 				90FA8DE22BB9609B00B5659A /* TcaNavigationApp.swift in Sources */,
+				90FA8DFB2BB9784100B5659A /* AddContactView.swift in Sources */,
 				90FA8DF52BB9749800B5659A /* ContactsFeature.swift in Sources */,
 				90FA8DF72BB9751800B5659A /* ContactsView.swift in Sources */,
 			);

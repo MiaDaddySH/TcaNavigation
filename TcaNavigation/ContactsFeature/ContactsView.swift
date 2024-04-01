@@ -5,12 +5,12 @@
 //  Created by Yuangang Sheng on 31.03.24.
 //
 
-import SwiftUI
 import ComposableArchitecture
+import SwiftUI
 
 struct ContactsView: View {
-  let store: StoreOf<ContactsFeature>
-  
+  @Bindable var store: StoreOf<ContactsFeature>
+
   var body: some View {
     NavigationStack {
       List {
@@ -27,6 +27,13 @@ struct ContactsView: View {
             Image(systemName: "plus")
           }
         }
+      }
+    }
+    .sheet(
+      item: $store.scope(state: \.addContact, action: \.addContact)
+    ) { addContactStore in
+      NavigationStack {
+        AddContactView(store: addContactStore)
       }
     }
   }
@@ -47,4 +54,3 @@ struct ContactsView: View {
     }
   )
 }
-
