@@ -16,7 +16,18 @@
 		90FA8DF72BB9751800B5659A /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DF62BB9751800B5659A /* ContactsView.swift */; };
 		90FA8DF92BB977F400B5659A /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DF82BB977F400B5659A /* AddContactFeature.swift */; };
 		90FA8DFB2BB9784100B5659A /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DFA2BB9784100B5659A /* AddContactView.swift */; };
+		90FA8E0C2BBB066F00B5659A /* ContactsFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8E0B2BBB066F00B5659A /* ContactsFeatureTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90FA8E042BBB052500B5659A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90FA8DD62BB9609B00B5659A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90FA8DDD2BB9609B00B5659A;
+			remoteInfo = TcaNavigation;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		90FA8DDE2BB9609B00B5659A /* TcaNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TcaNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +40,8 @@
 		90FA8DF62BB9751800B5659A /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		90FA8DF82BB977F400B5659A /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		90FA8DFA2BB9784100B5659A /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		90FA8E002BBB052500B5659A /* TcaNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TcaNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FA8E0B2BBB066F00B5659A /* ContactsFeatureTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsFeatureTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +53,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90FA8DFD2BBB052500B5659A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				90FA8DE02BB9609B00B5659A /* TcaNavigation */,
+				90FA8E012BBB052500B5659A /* TcaNavigationTests */,
 				90FA8DDF2BB9609B00B5659A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				90FA8DDE2BB9609B00B5659A /* TcaNavigation.app */,
+				90FA8E002BBB052500B5659A /* TcaNavigationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +113,14 @@
 			path = ContactsFeature;
 			sourceTree = "<group>";
 		};
+		90FA8E012BBB052500B5659A /* TcaNavigationTests */ = {
+			isa = PBXGroup;
+			children = (
+				90FA8E0B2BBB066F00B5659A /* ContactsFeatureTest.swift */,
+			);
+			path = TcaNavigationTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +144,24 @@
 			productReference = 90FA8DDE2BB9609B00B5659A /* TcaNavigation.app */;
 			productType = "com.apple.product-type.application";
 		};
+		90FA8DFF2BBB052500B5659A /* TcaNavigationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90FA8E062BBB052600B5659A /* Build configuration list for PBXNativeTarget "TcaNavigationTests" */;
+			buildPhases = (
+				90FA8DFC2BBB052500B5659A /* Sources */,
+				90FA8DFD2BBB052500B5659A /* Frameworks */,
+				90FA8DFE2BBB052500B5659A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90FA8E052BBB052500B5659A /* PBXTargetDependency */,
+			);
+			name = TcaNavigationTests;
+			productName = TcaNavigationTests;
+			productReference = 90FA8E002BBB052500B5659A /* TcaNavigationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +174,10 @@
 				TargetAttributes = {
 					90FA8DDD2BB9609B00B5659A = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					90FA8DFF2BBB052500B5659A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 90FA8DDD2BB9609B00B5659A;
 					};
 				};
 			};
@@ -146,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				90FA8DDD2BB9609B00B5659A /* TcaNavigation */,
+				90FA8DFF2BBB052500B5659A /* TcaNavigationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +210,13 @@
 			files = (
 				90FA8DEA2BB9609C00B5659A /* Preview Assets.xcassets in Resources */,
 				90FA8DE62BB9609C00B5659A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FA8DFE2BBB052500B5659A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +236,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90FA8DFC2BBB052500B5659A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FA8E0C2BBB066F00B5659A /* ContactsFeatureTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90FA8E052BBB052500B5659A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90FA8DDD2BB9609B00B5659A /* TcaNavigation */;
+			targetProxy = 90FA8E042BBB052500B5659A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		90FA8DEB2BB9609C00B5659A /* Debug */ = {
@@ -369,6 +445,47 @@
 			};
 			name = Release;
 		};
+		90FA8E072BBB052600B5659A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JND9XWCEGQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dasheng.TcaNavigationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TcaNavigation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TcaNavigation";
+			};
+			name = Debug;
+		};
+		90FA8E082BBB052600B5659A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JND9XWCEGQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dasheng.TcaNavigationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TcaNavigation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TcaNavigation";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +503,15 @@
 			buildConfigurations = (
 				90FA8DEE2BB9609C00B5659A /* Debug */,
 				90FA8DEF2BB9609C00B5659A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90FA8E062BBB052600B5659A /* Build configuration list for PBXNativeTarget "TcaNavigationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90FA8E072BBB052600B5659A /* Debug */,
+				90FA8E082BBB052600B5659A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
