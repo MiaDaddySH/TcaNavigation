@@ -10,7 +10,6 @@
 		9022EC642BBB1DC700EF823C /* ContactDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022EC632BBB1DC700EF823C /* ContactDetailFeature.swift */; };
 		9022EC672BBB1E5C00EF823C /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022EC662BBB1E5C00EF823C /* ContactDetailView.swift */; };
 		90FA8DE22BB9609B00B5659A /* TcaNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DE12BB9609B00B5659A /* TcaNavigationApp.swift */; };
-		90FA8DE42BB9609B00B5659A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA8DE32BB9609B00B5659A /* ContentView.swift */; };
 		90FA8DE62BB9609C00B5659A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FA8DE52BB9609C00B5659A /* Assets.xcassets */; };
 		90FA8DEA2BB9609C00B5659A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FA8DE92BB9609C00B5659A /* Preview Assets.xcassets */; };
 		90FA8DF22BB9742200B5659A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 90FA8DF12BB9742200B5659A /* ComposableArchitecture */; };
@@ -36,7 +35,6 @@
 		9022EC662BBB1E5C00EF823C /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		90FA8DDE2BB9609B00B5659A /* TcaNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TcaNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FA8DE12BB9609B00B5659A /* TcaNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TcaNavigationApp.swift; sourceTree = "<group>"; };
-		90FA8DE32BB9609B00B5659A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90FA8DE52BB9609C00B5659A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90FA8DE72BB9609C00B5659A /* TcaNavigation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TcaNavigation.entitlements; sourceTree = "<group>"; };
 		90FA8DE92BB9609C00B5659A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				9022EC622BBB1DB800EF823C /* ContactDetailFeature */,
 				90FA8DF32BB9748000B5659A /* ContactsFeature */,
 				90FA8DE12BB9609B00B5659A /* TcaNavigationApp.swift */,
-				90FA8DE32BB9609B00B5659A /* ContentView.swift */,
 				90FA8DE52BB9609C00B5659A /* Assets.xcassets */,
 				90FA8DE72BB9609C00B5659A /* TcaNavigation.entitlements */,
 				90FA8DE82BB9609C00B5659A /* Preview Content */,
@@ -249,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90FA8DE42BB9609B00B5659A /* ContentView.swift in Sources */,
 				90FA8DF92BB977F400B5659A /* AddContactFeature.swift in Sources */,
 				90FA8DE22BB9609B00B5659A /* TcaNavigationApp.swift in Sources */,
 				90FA8DFB2BB9784100B5659A /* AddContactView.swift in Sources */,
